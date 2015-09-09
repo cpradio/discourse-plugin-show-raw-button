@@ -1,0 +1,4 @@
+plugins:
+  discourse_show_raw_button_enabled:
+    default: true
+    client: true
