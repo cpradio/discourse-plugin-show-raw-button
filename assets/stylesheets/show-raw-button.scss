@@ -5,11 +5,6 @@
 }
 
 .raw-button.active {
-  background-color: #08C;
-  color: #FFF;
-}
-
-.raw-button {
-  background-color: transparent;
-  color: #A7A7A7;
+  background-color: $tertiary;
+  color: $secondary;
 }
