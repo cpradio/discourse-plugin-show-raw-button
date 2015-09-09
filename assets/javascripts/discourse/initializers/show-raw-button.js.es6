@@ -6,7 +6,8 @@ export default {
   initialize: function() {
     PostMenuComponent.registerButton(function(visibleButtons){
       if (this.get('collapsed')) { return; }
-      visibleButtons.splice(0,0,new Button('showRawPost', 'show-raw-button.button_text', 'code', {className: 'raw-button'}));
+      var position = visibleButtons.length - 2;
+      visibleButtons.splice(position,0,new Button('showRawPost', 'show-raw-button.button_text', 'code', {className: 'raw-button'}));
     });
 
     PostMenuComponent.reopen({
