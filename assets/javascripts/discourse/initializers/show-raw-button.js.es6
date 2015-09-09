@@ -5,6 +5,7 @@ export default {
   name: 'show-raw-button',
   initialize: function() {
     PostMenuComponent.registerButton(function(visibleButtons){
+      if (!Discourse.SiteSettings.raw_button_enabled) { return; }
       if (this.get('collapsed')) { return; }
       var position = visibleButtons.length - 2;
       visibleButtons.splice(position,0,new Button('showRawPost', 'show-raw-button.button_text', 'code', {className: 'raw-button'}));
@@ -26,7 +27,7 @@ export default {
           $.get('/raw/' + topicID + '/' + postID) .done(function (content) {
             postArea_raw_content.addClass("active");
             $rawButton.addClass("active");
-            postArea_raw_content.css({"white-space":"pre-wrap", 'border':'2px dashed #E7E7E7','padding':'3px'}) .text(content);
+            postArea_raw_content.text(content);
             cooked.hide();
           });
         } else {

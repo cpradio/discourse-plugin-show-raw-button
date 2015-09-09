@@ -1,3 +1,3 @@
 en:
   site_settings:
-    discourse_show_raw_button_enabled: 'Show the Raw Button on each Post?'
+    raw_button_enabled: 'Show the Raw Button on each Post?'

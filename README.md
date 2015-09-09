@@ -2,7 +2,11 @@
 
 This plugin adds a button to each post to show its raw format.
 
-![](https://raw.githubusercontent.com/cpradio/discourse-logout-menu-item/master/screenshot.png)
+![](https://raw.githubusercontent.com/cpradio/discourse-show-raw-button/master/screenshot.png)
+
+Clicking on the button produces
+
+![](https://raw.githubusercontent.com/cpradio/discourse-show-raw-button/master/screenshot-2.png)
 
 ## Installation
 
