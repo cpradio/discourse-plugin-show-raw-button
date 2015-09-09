@@ -14,7 +14,7 @@ Clone this repository in your Discourse plugins directory, rebuild the container
 
 ## Authors
 
-Matthew Wilkin
+TheDailyWTF group, repackaged as a plugin by Matthew Wilkin
 
 ## License
 
