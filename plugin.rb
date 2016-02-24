@@ -1,6 +1,6 @@
 # name: discourse-plugin-show-raw-button
 # about: Add a button to show the raw version of a given post
-# version: 0.1
+# version: 0.2.0
 # authors: Matthew Wilkin
 # url: https://github.com/cpradio/discourse-plugin-show-raw-button
 
