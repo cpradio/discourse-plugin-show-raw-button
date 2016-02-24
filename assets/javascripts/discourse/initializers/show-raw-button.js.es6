@@ -72,13 +72,13 @@ function initializePlugin(api)
         icon: 'code',
         className: 'raw-button',
         title: 'show-raw-button.button_text',
-        'first'
-      }
+        position: 'first'
+      };
     });
 
-    api.attachWidgetAction('post', 'showRawPost', function()
+    api.attachWidgetAction('post-menu', 'showRawPost', function()
     {
-      const post = this.model;
+      const post = this.findAncestorModel();
       var topicID = post.topic_id,
           postID = post.post_number,
           postArea = $("article[data-post-id='" + post.id + "'] div.contents"),
