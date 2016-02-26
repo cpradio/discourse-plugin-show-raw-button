@@ -119,7 +119,7 @@ function initializePlugin(api)
 
 export default {
   name: 'show-raw-button',
-  initialize: function()
+  initialize: function(container)
   {
     withPluginApi('0.1', api => initializePlugin(api), { noApi: () => priorToApi(container) });
   }
